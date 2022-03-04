@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { computed, reactive, ref } from 'vue';
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { message } from 'ant-design-vue';
-import useFormDataValidation from '@/composables/useFormDataValidation';
 import mainStore, { Right } from '@/store/main';
 import authStore from '@/store/auth';
-import { v4 as uuidv4 } from 'uuid';
 
 const { addRights, deleteRights, objs } = mainStore;
 const { accounts } = authStore;
