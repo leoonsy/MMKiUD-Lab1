@@ -46,23 +46,6 @@ input[type="submit"]:focus {
   outline: none !important;
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  transition: opacity 0.35s ease-out;
-}
-
-.fade-leave-active {
-  transition: opacity 0.35s ease-in;
-}
-
 strong {
   font-weight: 500;
-}
-
-td p {
-  margin-bottom: 0;
 }
