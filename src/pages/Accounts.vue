@@ -75,7 +75,7 @@ const removeAccount = () => {
             :label="t('password')"
             :has-feedback="true"
           >
-            <a-input v-model:value="addAccountModel.password" />
+            <a-input-password v-model:value="addAccountModel.password" />
           </a-form-item>
 
           <a-form-item
