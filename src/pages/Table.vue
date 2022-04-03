@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import mainStore, { Right } from '@/store/main';
+import mainStore, { type Right } from '@/store/main';
 import authStore from '@/store/auth';
 import { message } from 'ant-design-vue';
 

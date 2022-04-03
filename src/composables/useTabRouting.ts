@@ -1,5 +1,5 @@
 import { computed } from 'vue';
-import { Router } from 'vue-router';
+import type { Router } from 'vue-router';
 
 export default (router: Router) => ({
   selectedTab: computed({

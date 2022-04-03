@@ -1,4 +1,4 @@
-const namespace: string = import.meta.env.VITE_APP_STORAGE_NAMESPACE as string;
+const namespace: string = import.meta.env.VITE_STORAGE_NAMESPACE as string;
 
 export default {
   get: (key: string) => localStorage.getItem(`${namespace}:${key}`),

@@ -1,4 +1,4 @@
-import { PluralizationRulesMap } from 'vue-i18n';
+import type { PluralizationRulesMap } from 'vue-i18n';
 
 const pluralRules: PluralizationRulesMap = {
   // see https://vue-i18n-next.intlify.dev/guide/essentials/pluralization.html#custom-pluralization

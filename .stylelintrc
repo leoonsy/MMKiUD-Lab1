@@ -7,7 +7,7 @@
   "rules": {
     "selector-class-pattern": null
   },
-   "overrides": [
+  "overrides": [
     {
       "files": "**/*.vue",
       "customSyntax": "postcss-html"

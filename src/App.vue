@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {
-  computed, defineAsyncComponent, defineComponent, h, Slot,
+  computed, defineAsyncComponent, defineComponent, h, type Slot,
 } from 'vue';
 import { useRoute } from 'vue-router';
 import SuspenseWithFallback from '@/components/SuspenseWithFallback.vue';

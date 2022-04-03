@@ -3,7 +3,7 @@ import { reactive, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { message } from 'ant-design-vue';
 import useFormDataValidation from '@/composables/useFormDataValidation';
-import mainStore, { Obj } from '@/store/main';
+import mainStore, { type Obj } from '@/store/main';
 import { v4 as uuidv4 } from 'uuid';
 
 const { createObj, deleteObj, objs } = mainStore;

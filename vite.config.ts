@@ -1,25 +1,22 @@
-import { defineConfig, loadEnv } from 'vite';
+import { fileURLToPath, URL } from 'url';
+import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import path, { resolve } from 'path';
 import vueI18n from '@intlify/vite-plugin-vue-i18n';
 
-// https://vitejs.dev/config/
-export default ({ mode }) => {
-  process.env = { ...process.env, ...loadEnv(mode, process.cwd(), '') };
-
-  return defineConfig({
-    base: process.env.VITE_APP_PUBLIC_PATH,
-    resolve: {
-      alias: {
-        '@': resolve(__dirname, 'src'),
-      },
+export default defineConfig({
+  build: {
+    target: 'esnext',
+  },
+  plugins: [
+    vue(),
+    vueI18n({
+      include: fileURLToPath(new URL('./src/i18n/**', import.meta.url)),
+      defaultSFCLang: 'yaml',
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
-    plugins: [
-      vue(),
-      vueI18n({
-        include: path.resolve(__dirname, './src/i18n/**'),
-        defaultSFCLang: 'yaml',
-      }),
-    ],
-  });
-};
+  },
+});

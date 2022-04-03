@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import authStore, { Account } from '@/store/auth';
+import authStore, { type Account } from '@/store/auth';
 import { computed, reactive, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { message } from 'ant-design-vue';

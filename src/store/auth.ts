@@ -38,8 +38,6 @@ const createAccount = (param: Account) => {
     throw new Error('Создать аккаунт может только администратор');
   }
 
-  console.log(param);
-  console.log(accounts.value);
   if (accounts.value.find((acc) => acc.name === param.name)) {
     throw new Error('Аккаунт с таким именем уже существует');
   }

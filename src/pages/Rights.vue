@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { message } from 'ant-design-vue';
-import mainStore, { Right } from '@/store/main';
+import mainStore, { type Right } from '@/store/main';
 import authStore from '@/store/auth';
 
 const { addRights, deleteRights, objs } = mainStore;
